@@ -55,6 +55,7 @@ body {
 .header-button {
   height: 100%;
 }
-.header-nav-item {
+.header-nav-item:not(:last-child) {
+  /* убирает отступ у последнего элемента */
   margin-right: 50px;
 }

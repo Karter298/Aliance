@@ -56,3 +56,6 @@
 .header-button {
   height: 100%;
 }
+.header-nav-item {
+  flex-shrink: 0; /* Текст съезжал в два ряда на меньшем экране*/
+}

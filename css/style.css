@@ -42,7 +42,7 @@ body {
   background-image: url("../img/header-bg.jpg");
   background-size: cover; /*что бы картинка на заднем фоне заняла всё пространство*/
   background-repeat: no-repeat; /*картинка на заднем фоне не будет повторяться*/
-  background-position: center bottom -39px; /*фон прогружается по центу*/
+  background-position: center bottom -54px; /*фон прогружается по центу*/
   position: relative; /* позиционирование (родитель) */
 }
 .header-image::before {

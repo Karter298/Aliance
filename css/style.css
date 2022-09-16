@@ -181,6 +181,8 @@ body {
 }
 .steps-item {
   max-width: 330px;
+  justify-content: space-between;
+  padding-right: 30px;
 }
 .steps-num {
   font-family: "Bebas Neue Book";

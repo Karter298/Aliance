@@ -50,7 +50,6 @@ html {
 }
 .header {
   padding-top: 5.875rem;
-  min-height: 100vh; /*минимум 100% высоты*/
 }
 .header-image {
   background-image: url("../img/header-bg.jpg");
@@ -167,13 +166,43 @@ html {
 }
 .header-features-item {
   padding: 1.875rem 3.125rem;
+  min-height: 100%;
   width: 18rem;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
-.header-features-item:not(:last-child) {
-  border-right: none; /*Убрали бордер првой стороны, но не для последнего*/
-}
 
+.slider-buttons {
+  display: none;
+  height: 44px;
+}
+.slider-button-prev,
+.slider-button-next {
+  height: 100%;
+  flex-basis: 50%;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.steps-slider-buttons {
+  display: none;
+  position: sticky;
+  top: 20px;
+  justify-content: flex-end;
+  height: 40px;
+}
+.steps-slider-button-prev,
+.steps-slider-button-next {
+  background-color: #5c8ee6;
+  max-width: 60px;
+  height: 100%;
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 .header-features-text {
   font-weight: 400;
   font-size: 1rem;
@@ -194,13 +223,10 @@ html {
   margin-top: 1.4375rem;
 }
 .steps {
-  display: flex;
   list-style: none;
   padding: 0;
-  gap: 1.875rem;
 }
 .steps-item {
-  max-width: 20.625rem;
   padding-right: 1.875rem;
 }
 .steps-num {
@@ -282,11 +308,14 @@ html {
   .header-phone {
     margin-right: 2rem;
   }
-  .steps-item {
-    max-width: 18.625rem;
-  }
 }
 @media (max-width: 1200px) {
+  .steps-slider-buttons {
+    display: flex;
+  }
+  .slider-buttons {
+    display: flex;
+  }
   .header-phone {
     display: none;
   }
@@ -299,9 +328,6 @@ html {
   }
   .container {
     max-width: 70rem;
-  }
-  .steps-item {
-    max-width: 16rem;
   }
 }
 @media (max-width: 992px) {
@@ -428,5 +454,27 @@ html {
   }
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-9px);
+  }
+}
+@media (max-width: 760px) {
+  .container {
+    max-width: 40rem;
+  }
+  .header-title {
+    font-size: 4rem;
+  }
+  .header-content {
+    padding-top: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+  .header-title {
+    font-size: 2rem;
+  }
+  .header-content {
+    padding-top: 2rem;
   }
 }

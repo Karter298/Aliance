@@ -163,6 +163,7 @@ html {
   min-height: 10.5rem;
   padding: 0;
   margin-top: 6.25rem;
+  margin-bottom: 0;
   list-style: none; /* убирает точки в списке */
   color: #fff;
   position: relative;
@@ -228,6 +229,7 @@ html {
 .steps {
   list-style: none;
   padding: 0;
+  margin-top: auto;
 }
 .steps-item {
   padding-right: 1.875rem;
@@ -240,7 +242,6 @@ html {
   color: #5c8ee6;
   display: flex;
   align-items: center;
-  padding-top: 0.1875rem;
 }
 .steps-num:after {
   /*Полосы между цифрами*/
@@ -256,9 +257,9 @@ html {
   font-size: 1.75rem;
   line-height: 160%;
   color: #292d33;
-  margin-top: 35px;
-  margin-bottom: 0.6875rem;
   margin-right: 1.875rem;
+  margin-top: 2.3125rem;
+  margin-bottom: 0.125rem;
 }
 .steps-text {
   font-weight: 400;
@@ -267,6 +268,7 @@ html {
   color: #828a99;
   margin-top: 0.625rem;
   margin-bottom: 1.25rem;
+  padding-right: 30px;
 }
 .steps-link {
   text-decoration: none;

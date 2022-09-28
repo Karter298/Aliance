@@ -44,6 +44,9 @@ html {
 .phone-icon {
   fill: #5c8ee6;
 }
+.logo {
+  display: none;
+}
 .logo-svg {
   width: 8.75rem;
   height: 2.75rem;

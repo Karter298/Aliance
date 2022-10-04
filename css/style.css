@@ -308,9 +308,6 @@ html {
   margin-right: 20px;
   transition: width 0.2s;
 }
-.steps-link:hover:before {
-  width: 60px;
-}
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -331,12 +328,6 @@ html {
   border: 1px solid #ebebf0;
   position: relative;
   text-decoration: none;
-}
-.card:hover .card-title {
-  color: #5c8ee6;
-}
-.card:hover {
-  border-color: #5c8ee6;
 }
 .card-content {
   padding: 2.4375rem 3.125rem;
@@ -378,13 +369,6 @@ html {
   position: relative;
   text-decoration: none;
 }
-
-.card-trade:hover .trademarks-title {
-  color: #5c8ee6;
-}
-.card-trade:hover {
-  border-color: #5c8ee6;
-}
 .section-title-trade {
   font-family: "Bebas Neue Book";
   font-size: 3.75rem;
@@ -419,8 +403,26 @@ html {
   fill: #828a99;
   transition: fill 0.2s;
 }
-.card-trade:hover .trademarks-icon {
-  fill: #5c8ee6;
+
+@media (min-width: 992px) {
+  .steps-link:hover:before {
+    width: 60px;
+  }
+  .card:hover .card-title {
+    color: #5c8ee6;
+  }
+  .card:hover {
+    border-color: #5c8ee6;
+  }
+  .card-trade:hover .trademarks-title {
+    color: #5c8ee6;
+  }
+  .card-trade:hover {
+    border-color: #5c8ee6;
+  }
+  .card-trade:hover .trademarks-icon {
+    fill: #5c8ee6;
+  }
 }
 @media (max-width: 1700px) {
   html {

@@ -15,6 +15,7 @@ html {
   src: url("BebasNeueBook.eot");
   src: url("../fonts/BebasNeueBook.woff") format("woff"),
     url("../fonts/BebasNeueBook.woff2") format("woff2");
+  font-weight: 400;
   font-weight: normal;
   font-style: normal;
 }
@@ -171,7 +172,7 @@ html {
   line-height: 120%;
   margin: 1.4375rem 0;
   letter-spacing: 0.8px;
-  word-spacing: -2.1px;
+  word-spacing: -2.1008px;
 }
 .header-text {
   max-width: 45rem;
@@ -358,18 +359,6 @@ html {
   width: 100%;
   z-index: 0;
 }
-.cards-trade {
-  display: flex;
-  flex-wrap: wrap;
-  transition: border 0.2s;
-}
-.card-trade {
-  display: flex;
-  flex-basis: 50%;
-  border: 1px solid #ebebf0;
-  position: relative;
-  text-decoration: none;
-}
 .section-title-trade {
   font-family: "Bebas Neue Book";
   font-size: 3.75rem;
@@ -378,31 +367,47 @@ html {
   margin-top: 1.4375rem;
   margin-bottom: 3.5625rem;
   word-spacing: 2px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.5008px;
+}
+.trademark-cards {
+  display: flex;
+  transition: border 0.2s;
+}
+.trademark-card {
+  flex-basis: 50%;
+  border: 1px solid #ebebf0;
+  text-decoration: none;
+  padding: 50px 51px 50px 50px;
+  display: grid;
+  grid-column-gap: 3.125rem;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: auto 2fr;
+  grid-template-areas: "logo title title" "logo text text";
 }
 .trademarks-title {
   font-weight: 400;
   font-size: 1.75rem;
   line-height: 160%;
   color: #292d33;
-  margin-top: 50px;
-  margin-bottom: -6px;
   transition: color 0.2s;
-  padding-left: 12px;
+  grid-area: title;
+  margin: 0;
+  margin-bottom: 0.625rem;
 }
 .trademarks-text {
   font-weight: 400;
   font-size: 1rem;
   line-height: 160%;
   color: #828a99;
-  padding-left: 12px;
-  padding-right: 56px;
+  grid-area: text;
+  margin: 0;
 }
 .trademarks-icon {
-  margin: 49px 0px 50px 11px;
-  width: 100%;
+  width: 180px;
+  height: 180px;
   fill: #828a99;
   transition: fill 0.2s;
+  grid-area: logo;
 }
 
 @media (min-width: 992px) {
@@ -415,13 +420,13 @@ html {
   .card:hover {
     border-color: #5c8ee6;
   }
-  .card-trade:hover .trademarks-title {
+  .trademark-card:hover .trademarks-title {
     color: #5c8ee6;
   }
-  .card-trade:hover {
+  .trademark-card:hover {
     border-color: #5c8ee6;
   }
-  .card-trade:hover .trademarks-icon {
+  .trademark-card:hover .trademarks-icon {
     fill: #5c8ee6;
   }
 }
@@ -476,6 +481,13 @@ html {
   }
   .card {
     flex-basis: 50%;
+  }
+  .trademark-card {
+    grid-template-columns: auto auto;
+  }
+  .trademarks-icon {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -610,6 +622,12 @@ html {
     font-weight: 600;
     font-size: 4rem;
   }
+  .trademark-cards {
+    flex-direction: column;
+  }
+  .trademark-card {
+    padding: 20px;
+  }
 }
 @media (max-width: 760px) {
   .container {
@@ -664,7 +682,7 @@ html {
   .card {
     flex-basis: 100%;
   }
-  .card-trade {
+  .trademark-card {
     flex-basis: 100%;
   }
   .card-text {
@@ -688,6 +706,9 @@ html {
   .card-title {
     margin-bottom: -0.8rem;
   }
+  .hidden {
+    display: none;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -698,5 +719,28 @@ html {
   }
   .section-title {
     font-size: 2.8rem;
+  }
+  .features-icon {
+    margin: -6px 0px 6px -8px;
+  }
+  .trademark-card {
+    grid-template-areas: "logo title" "text text";
+  }
+  .section-title-trade {
+    font-size: 3rem;
+    margin-bottom: 2.8rem;
+  }
+  .trademarks-icon {
+    width: 100px;
+    height: 100px;
+    margin: 9px;
+  }
+  .trademarks-text {
+    font-size: 14px;
+    padding: 11px 0px 7px 10px;
+  }
+  .trademarks-title {
+    line-height: 140%;
+    margin: 8px 0px 0px -68px;
   }
 }

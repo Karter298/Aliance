@@ -315,6 +315,9 @@ html {
   flex-wrap: wrap;
   transition: border 0.2s;
 }
+.disinfection {
+  margin-right: 10px;
+}
 
 .section-title-control {
   font-family: "Bebas Neue Book";
@@ -332,7 +335,7 @@ html {
   text-decoration: none;
 }
 .card-content {
-  padding: 2.4375rem 3.125rem;
+  padding: 2.438rem 1.125rem 2.438rem 3rem;
 }
 .card-title {
   font-weight: 400;
@@ -664,7 +667,9 @@ html {
     font-size: 14px;
   }
   .button-company {
-    padding: 1.7rem 8.3rem;
+    padding: 1.7rem 7.3rem;
+    letter-spacing: 1.3px;
+    white-space: nowrap;
   }
   .section-title-control {
     font-size: 2.8rem;

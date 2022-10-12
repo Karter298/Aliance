@@ -92,3 +92,22 @@ const stepsSwiper = new Swiper(".steps-swiper", {
     },
   },
 });
+
+const blogSwiper = new Swiper(".blog-swiper", {
+  speed: 400,
+  autoHeight: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".blog-slider-button-next",
+    prevEl: ".blog-slider-button-prev",
+  },
+  breakpoints: {
+    775: {
+      slidesPerView: 1,
+    },
+    776: {
+      slidesPerView: 2,
+    },
+  },
+});

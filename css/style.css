@@ -917,6 +917,7 @@ html {
   }
   .section-title {
     font-size: 2.8rem;
+    letter-spacing: 1px;
   }
   .features-icon {
     margin: -6px 0px 6px -8px;

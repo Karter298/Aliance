@@ -1197,7 +1197,7 @@ html {
     padding-bottom: 2.3rem;
   }
   .footer-logo {
-    width: 159px;
+    min-width: 159px;
     height: 70px;
   }
   .footer-phone {
@@ -1211,9 +1211,7 @@ html {
   }
   .footer-info {
     margin-bottom: 10px;
-  }
-  .footer-info-address {
-    min-width: 100px;
+    gap: 10px;
   }
   .footer-social {
     margin-top: 10px;

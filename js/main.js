@@ -116,6 +116,7 @@ const modal = document.querySelector(".modal");
 const modalOpen = document.querySelector(".is-open");
 const modalToggle = document.querySelectorAll("[data-roggle=modal]");
 const modalClose = document.querySelector(".modal-close");
+const modalDialog = document.querySelector(".modal-dialog");
 
 console.log(modalToggle);
 modalToggle.forEach((element) => {
@@ -133,3 +134,4 @@ document.addEventListener("keydown", function (e) {
     modal.classList.remove("is-open");
   }
 });
+

@@ -1518,8 +1518,7 @@ html {
     margin-top: 6px;
   }
   .modal {
-    height: 35.5rem;
-    top: 121px;
+    margin-top: -7px;
   }
   .modal-dialog {
     padding: 30px;

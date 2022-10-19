@@ -1517,6 +1517,41 @@ html {
     color: inherit;
     margin-top: 6px;
   }
+  .modal {
+    height: 35.5rem;
+    top: 121px;
+  }
+  .modal-dialog {
+    padding: 30px;
+  }
+  .modal-close {
+    top: 2.7rem;
+    right: 2.7rem;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .modal-close-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .modal-title {
+    letter-spacing: 2px;
+  }
+  .modal-text {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .input-group-vertical {
+    margin-top: 17px;
+  }
+  .input-modal-group {
+    min-width: 23.8125rem;
+  }
+  .modal-form-button {
+    height: 5rem;
+    margin-top: -3px;
+  }
 }
 @media (max-width: 455px) {
   .blog-card-text {

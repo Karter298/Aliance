@@ -113,25 +113,31 @@ const blogSwiper = new Swiper(".blog-swiper", {
 });
 
 const modal = document.querySelector(".modal");
-const modalOpen = document.querySelector(".is-open");
-const modalToggle = document.querySelectorAll("[data-roggle=modal]");
-const modalClose = document.querySelector(".modal-close");
 const modalDialog = document.querySelector(".modal-dialog");
+const body = document.body;
 
-console.log(modalToggle);
-modalToggle.forEach((element) => {
-  element.addEventListener("click", (event) => {
+document.addEventListener("click", (event) => {
+  if (
+    event.target.dataset.toggle == "body" ||
+    event.target.dataset.toggle == "modal" ||
+    event.target.parentNode.dataset.toggle == "modal" ||
+    (!event.composedPath().includes(modalDialog) &&
+      modal.classList.contains("is-open"))
+  ) {
     event.preventDefault();
-    modal.classList.add("is-open");
-  });
-});
-modalClose.addEventListener("click", (event) => {
-  event.preventDefault();
-  modal.classList.remove("is-open");
-});
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape") {
-    modal.classList.remove("is-open");
+    modal.classList.toggle("is-open");
+    body.classList.add("locked");
   }
 });
-
+document.addEventListener("keyup", (event) => {
+  if (event.key == "Escape" && modal.classList.contains("is-open")) {
+    modal.classList.toggle("is-open");
+  }
+});
+$("modal")
+  .on("is-open", function () {
+    $("body").addClass("modal-open");
+  })
+  .on("hidden", function () {
+    $("body").removeClass("modal-open");
+  });

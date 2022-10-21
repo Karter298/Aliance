@@ -4,6 +4,9 @@
 body {
   font-family: "Noto Sans", sans-serif;
 }
+.locked {
+  overflow: hidden;
+}
 .mobile-menu {
   display: none;
 }
@@ -1555,5 +1558,10 @@ html {
 @media (max-width: 455px) {
   .blog-card-text {
     display: none;
+  }
+}
+@media (max-height: 590px) {
+  .modal {
+    overflow: scroll;
   }
 }

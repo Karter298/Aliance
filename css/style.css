@@ -1067,7 +1067,8 @@ html {
     display: none;
   }
   .logo-svg {
-    max-width: 10rem;
+    min-width: 10rem;
+    min-height: 4rem;
   }
   .header-logo {
     flex-grow: 1;
@@ -1610,7 +1611,23 @@ html {
   .blog-card-text {
     display: none;
   }
+  .seporator-about {
+    margin-top: 0.8rem;
+  }
+  .section-title-about {
+    font-size: 4rem;
+  }
+  .breadcrumbs .breadcrumb-item::before {
+    margin-left: 0.3rem;
+    margin-right: 0.7rem;
 }
+.breadcrumb-item-link {
+    letter-spacing: -1px;
+}
+.breadcrumb-item {
+    font-size: 12px;
+}
+
 @media (max-height: 590px) {
   .modal {
     overflow: scroll;

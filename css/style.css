@@ -1075,12 +1075,12 @@ html {
     justify-content: center;
   }
   .mobile-menu-toggle {
-    width: 80px;
+    width: 6.7rem;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2.3rem 2.5rem;
+    padding: 2.4rem 2.5rem;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
   .navbar-light .mobile-menu-line {
@@ -1395,7 +1395,7 @@ html {
   }
   .footer-menu-columns-2 {
     columns: 24rem auto;
-    min-width: 30rem;
+    min-width: 20rem;
   }
 }
 @media (max-width: 576px) {
@@ -1620,14 +1620,31 @@ html {
   .breadcrumbs .breadcrumb-item::before {
     margin-left: 0.3rem;
     margin-right: 0.7rem;
-}
-.breadcrumb-item-link {
+  }
+  .breadcrumb-item-link {
     letter-spacing: -1px;
-}
-.breadcrumb-item {
+  }
+  .breadcrumb-item {
     font-size: 12px;
+  }
 }
-
+@media (max-width: 374px) {
+  .cta-form {
+    width: 24rem;
+  }
+  .cta-form-text {
+    width: 24rem;
+  }
+  .input-group {
+    width: 24.5625rem;
+  }
+  .cta-button {
+    padding: 1.9rem 7rem;
+  }
+  .button-company {
+    padding: 1.7rem 5.3rem;
+  }
+}
 @media (max-height: 590px) {
   .modal {
     overflow: scroll;

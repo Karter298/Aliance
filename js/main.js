@@ -130,12 +130,13 @@ document.addEventListener("click", (event) => {
   ) {
     event.preventDefault();
     modal.classList.toggle("is-open");
-    body.classList.add("locked");
+    body.classList.toggle("locked");
   }
 });
 document.addEventListener("keyup", (event) => {
   if (event.key == "Escape" && modal.classList.contains("is-open")) {
     modal.classList.toggle("is-open");
+    body.classList.toggle("locked");
   }
 });
 $("modal")

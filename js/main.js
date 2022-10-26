@@ -38,7 +38,14 @@ window.addEventListener("scroll", () => {
   if (isFront) {
     this.scrollY > 1 ? lightModeOn() : lightModeOff();
   }
+  if (window.matchMedia("(max-width: 992px)").matches) {
+    this.scrollY > 1 ? changeNavHeight("5.7rem") : changeNavHeight("5.7rem");
+  }
+  if (window.matchMedia("(min-width: 993px)").matches) {
+    this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem");
+  }
 });
+
 mMenuToggle.addEventListener("click", (event) => {
   event.preventDefault();
   menu.classList.contains("is-open") ? closeMenu() : openMenu();
@@ -139,10 +146,3 @@ document.addEventListener("keyup", (event) => {
     body.classList.toggle("locked");
   }
 });
-$("modal")
-  .on("is-open", function () {
-    $("body").addClass("modal-open");
-  })
-  .on("hidden", function () {
-    $("body").removeClass("modal-open");
-  });

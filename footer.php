@@ -28,7 +28,7 @@
                   id="user-phone"
                   type="tel"
                   name="userphone"
-                  class="input"
+                  class="input tel"
                   placeholder=" "
                   maxlength="30"
                   required
@@ -222,7 +222,7 @@
               <input
                 id="modal-user-phone"
                 type="tel"
-                class="input input-modal"
+                class="input input-modal tel"
                 placeholder=" "
                 name="userphone"
               />
@@ -253,6 +253,7 @@
         </form>
       </div>
     </div>
+    
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/just-validate.production.min.js"></script>
     <script src="js/main.js"></script>

@@ -28,7 +28,7 @@
                   id="user-phone"
                   type="tel"
                   name="userphone"
-                  class="input tel"
+                  class="input phone-mask"
                   placeholder=" "
                   maxlength="30"
                   required
@@ -190,10 +190,10 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
-    <div class="modal">
+    <div class="modal" id="feedback-modal">
       <div class="modal-dialog">
         <h2 class="modal-title">Есть вопросы?</h2>
-        <a href="#" class="modal-close" data-toggle="modal">
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
           <svg class="modal-close-icon" width="24" height="24">
             <use href="img/sprite.svg#close"></use>
           </svg>
@@ -222,7 +222,7 @@
               <input
                 id="modal-user-phone"
                 type="tel"
-                class="input input-modal tel"
+                class="input input-modal phone-mask"
                 placeholder=" "
                 name="userphone"
               />
@@ -253,7 +253,24 @@
         </form>
       </div>
     </div>
-    
+    <div class="modal modal-thx" id="alert-modal">
+      <div class="modal-dialog modal-txh-dialog">
+        <a href="#" class="modal-close modal-thx-close" data-toggle="modal" data-target="#alert-modal">
+          <svg class="modal-close-icon" width="24" height="24">
+            <use href="img/sprite.svg#close"></use>
+          </svg>
+        </a>
+        <img src="img/thanks_illu.png" alt="thanks to msg" class="modal-thx-image">
+        <h2 class="modal-thx-title">Спасибо за заявку!</h2>
+        <p class="modal-text modal-text">
+          Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+        </p>
+        <button  class="button modal-thx-button">
+              Вернуться на главную
+            </button>
+      </div>
+    </div>
+    <!-- /.modal-thx -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/just-validate.production.min.js"></script>
     <script src="js/main.js"></script>

@@ -123,26 +123,36 @@ const blogSwiper = new Swiper(".blog-swiper", {
   },
 });
 
-const modal = document.querySelector(".modal");
-const modalDialog = document.querySelector(".modal-dialog");
-const body = document.body;
+let currentModal; //текущее модальное окно
+let modalDialog; //белое диалоговое окно
+let alertModal = document.querySelector("#alert-modal"); //окно с предупреждением
 
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "body" ||
-    event.target.dataset.toggle == "modal" ||
-    event.target.parentNode.dataset.toggle == "modal" ||
-    (!event.composedPath().includes(modalDialog) &&
-      modal.classList.contains("is-open"))
-  ) {
+const modalButtons = document.querySelectorAll("[data-toggle=modal]"); // переключатели модальных окон
+modalButtons.forEach((button) => {
+  /* клик по переключателю */
+  button.addEventListener("click", (event) => {
     event.preventDefault();
-    modal.classList.toggle("is-open");
-    body.classList.toggle("locked");
-  }
+    /* определяем текущее открытое окно */
+    currentModal = document.querySelector(button.dataset.target);
+    /* открываем текущее окно */
+    currentModal.classList.toggle("is-open");
+    /* назнчаем новое белое диалоговое окно */
+    modalDialog = currentModal.querySelector(".modal-dialog");
+    /* отслеживаем клик по окно и пустым областям */
+    currentModal.addEventListener("click", (event) => {
+      /* если клик в пустую область */
+      if (!event.composedPath().includes(modalDialog)) {
+        /* закрываем окно */
+        currentModal.classList.remove("is-open");
+      }
+    });
+  });
 });
+/* Ловим событие нажатия на кнопки */
 document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && modal.classList.contains("is-open")) {
-    modal.classList.toggle("is-open");
+  /* проверяем, что это Escape и текущее окно открыто */
+  if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+    currentModal.classList.toggle("is-open");
     body.classList.toggle("locked");
   }
 });
@@ -180,7 +190,18 @@ forms.forEach((form) => {
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            alert("Форма отправлена!");
+            currentModal.classList.remove("is-open");
+            alertModal.classList.add("is-open");
+            currentModal = alertModal;
+            modalDialog = currentModal.querySelector(".modal-dialog");
+            /* отслеживаем клик по окно и пустым областям */
+            currentModal.addEventListener("click", (event) => {
+              /* если клик в пустую область */
+              if (!event.composedPath().includes(modalDialog)) {
+                /* закрываем окно */
+                currentModal.classList.remove("is-open");
+              }
+            });
           } else {
             alert("Ошибка. Текст ошибки:".response.statusText);
           }
@@ -190,44 +211,72 @@ forms.forEach((form) => {
     });
 });
 
-window.addEventListener("DOMContentLoaded", function () {
-  [].forEach.call(document.querySelectorAll(".tel"), function (input) {
-    var keyCode;
-    function mask(event) {
-      event.keyCode && (keyCode = event.keyCode);
-      var pos = this.selectionStart;
-      if (pos < 3) event.preventDefault();
-      var matrix = "+7 (___) ___ ____",
-        i = 0,
-        def = matrix.replace(/\D/g, ""),
-        val = this.value.replace(/\D/g, ""),
-        new_value = matrix.replace(/[_\d]/g, function (a) {
-          return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
-        });
-      i = new_value.indexOf("_");
-      if (i != -1) {
-        i < 5 && (i = 3);
-        new_value = new_value.slice(0, i);
-      }
-      var reg = matrix
-        .substr(0, this.value.length)
-        .replace(/_+/g, function (a) {
-          return "\\d{1," + a.length + "}";
-        })
-        .replace(/[+()]/g, "\\$&");
-      reg = new RegExp("^" + reg + "$");
-      if (
-        !reg.test(this.value) ||
-        this.value.length < 5 ||
-        (keyCode > 47 && keyCode < 58)
-      )
-        this.value = new_value;
-      if (event.type == "blur" && this.value.length < 5) this.value = "";
+/* Создаем префикс +7, даже если вводят 8 или 9 */
+const prefixNumber = (str) => {
+  /* если вводят семерку, добавляем ей скобку */
+  if (str === "7") {
+    return "7 (";
+  }
+  /* если вводят восьмерку, ставим вместо нее +7 ( */
+  if (str === "8") {
+    return "+7 (";
+  }
+  /* если пишут девятку, заменяем на +7 (9  */
+  if (str === "9") {
+    return "7 (9";
+  }
+  /* в других случаях просто 7 (  */
+  return "7 (";
+}; /* профикс в любом раскладе будет +7 () */
+
+/* Ловим события ввода в любом поле */
+document.addEventListener("input", (e) => {
+  /* Проверяем, что это поле имеет класс phone-mask */
+  if (e.target.classList.contains("phone-mask")) {
+    /* поле с телефоном помещаем в переменную input */
+    const input = e.target;
+    /* вставляем плюс в начале номера */
+    const value = input.value.replace(/\D+/g, "");
+    /* длинна номера 11 символов */
+    const numberLength = 11;
+
+    /* Создаем переменную, куда будем записывать номер */
+    let result;
+    /* Если пользователь ввел 8... */
+    if (input.value.includes("+8") || input.value[0] === "8") {
+      /* Стираем восьмерку */
+      result = "";
+    } else {
+      /* Оставляем плюсик в поле */
+      result = "+";
     }
 
-    input.addEventListener("input", mask, false);
-    input.addEventListener("focus", mask, false);
-    input.addEventListener("blur", mask, false);
-    input.addEventListener("keydown", mask, false);
-  });
+    /* Запускаем цикл, где переберем каждую цифру от 0 до 11 */
+    for (let i = 0; i < value.length && i < numberLength; i++) {
+      switch (i) {
+        case 0:
+          /* в самом начале ставим префикс +7 ( */
+          result += prefixNumber(value[i]);
+          continue;
+        case 4:
+          /* добавляем после "+7 (" круглую скобку ")" */
+          result += ") ";
+          break;
+        case 7:
+          /* дефис после 7 символа */
+          result += "-";
+          break;
+        case 9:
+          /* еще дефис  */
+          result += "-";
+          break;
+        default:
+          break;
+      }
+      /* на каждом шаге цикла добавляем новую цифру к номеру */
+      result += value[i];
+    }
+    /* итог: номер в формате +7 (999) 123-45-67 */
+    input.value = result;
+  }
 });

@@ -902,6 +902,66 @@ html {
   align-items: center;
   justify-content: center;
 }
+.modal-thx {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 45, 51, 0.5);
+  z-index: 10;
+  display: flex;
+}
+.modal-txh-dialog {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  max-width: 28.75rem;
+  padding: 2.5rem 3.125rem;
+}
+.modal-thx-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 3rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ebebf0;
+}
+.modal-thx-image {
+  max-width: 22.5rem;
+  max-height: 19.375rem;
+}
+.modal-thx-title {
+  font-family: "Bebas Neue Book";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  color: #292d33;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+}
+.modal-thx-text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828a99;
+  margin-bottom: 1.875rem;
+}
+.modal-thx-button {
+  width: 100%;
+  display: flex;
+  height: 3.875rem;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+}
 .container-about {
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;

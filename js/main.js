@@ -179,10 +179,15 @@ forms.forEach((form) => {
         rule: "required",
         errorMessage: "Укажите телефон",
       },
+      {
+        rule: "minLength",
+        value: 18,
+        errorMessage: "Не верно указан номер телефона",
+      },
     ])
     .onSuccess((event) => {
-      const thisForm = event.target; // наша форма
-      const formData = new FormData(thisForm); //данные из нашей формы
+      const thisForm = event.target;
+      const formData = new FormData(thisForm);
       const ajaxSend = (formData) => {
         fetch(thisForm.getAttribute("action"), {
           method: thisForm.getAttribute("method"),

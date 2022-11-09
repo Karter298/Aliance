@@ -23,7 +23,7 @@
           <a href="/about.php" class="mobile-menu-link">О компании</a>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контрактное производство</a>
+          <a href="/contracts.php" class="mobile-menu-link">Контрактное производство</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
               <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
@@ -64,7 +64,7 @@
           <a href="#" class="mobile-menu-link">Новости</a>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контакты</a>
+          <a href="/contacts.php" class="mobile-menu-link">Контакты</a>
         </li>
       </ul>
       <a href="tel:+74996861014" class="mobile-phone">+7 (499) 686-10-14</a>
@@ -120,16 +120,16 @@
           <a href="/about.php" class="header-nav-link">О компании</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Контрактное производство</a>
+          <a href="/contracts.php" class="header-nav-link">Контрактное производство</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Собственные торговые марки</a>
+          <a href="/trademarks.php" class="header-nav-link">Собственные торговые марки</a>
         </li>
         <li class="header-nav-item">
           <a href="#" class="header-nav-link">Новости</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Контакты</a>
+          <a href="/contacts.php" class="header-nav-link">Контакты</a>
         </li>
       </ul>
       <div class="header-phone">
@@ -288,275 +288,19 @@
       <!-- /.container -->
     </section>
     <!-- /.section secrion-light -->
-    <section class="section production">
-      <div class="container">
-        <div class="seporator"></div>
-        <h2 class="section-title-control">Контрактное производство</h2>
-        <div class="cards">
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Автомобильная химия</h3>
-              <p class="card-text">
-                Безусловно, сплочённость команды профессионалов позволяет
-                оценить значение форм воздействия.
-              </p>
-            </div>
-            <img
-              src="img/avto-him.png"
-              alt="Автомобильная химия"
-              class="card-image"
-            />
-          </a>
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Бытовая химия</h3>
-              <p class="card-text chemistry">
-                А также стремящиеся вытеснить традиционное производство,
-                нанотехнологии функционально разнесены на независимые элементы.
-              </p>
-            </div>
-            <img src="img/bit-him.png" alt="Бытовая химия" class="card-image" />
-          </a>
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Дезинфицирующие средства</h3>
-              <p class="card-text disinfection">
-                Лишь интерактивные прототипы призваны к ответу.
-              </p>
-            </div>
-            <img
-              src="img/dezinfect.png"
-              alt="Дезинфицирующие средства"
-              class="card-image"
-            />
-          </a>
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Пищевые аэрозоли</h3>
-              <p class="card-text spray">
-                Безусловно, сплочённость команды профессионалов позволяет
-                оценить значение форм воздействия.
-              </p>
-            </div>
-            <img
-              src="img/dezinfect.png"
-              alt="Пищевые аэрозоли"
-              class="card-image"
-            />
-          </a>
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Косметическая продукция</h3>
-              <p class="card-text cosmetic">
-                Лишь интерактивные прототипы призваны к ответу.
-              </p>
-            </div>
-            <img
-              src="img/avto-him.png"
-              alt="Косметическая продукция"
-              class="card-image"
-            />
-          </a>
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Краски аэрозольные</h3>
-              <p class="card-text paints">
-                А также стремящиеся вытеснить традиционное производство,
-                нанотехнологии функционально разнесены на независимые элементы.
-              </p>
-            </div>
-            <img
-              src="img/bit-him.png"
-              alt="Краски аэрозольные"
-              class="card-image"
-            />
-          </a>
-        </div>
-        <!-- /.cards -->
-      </div>
-    </section>
+    <?php $contracts_block = "Контрактное производство"; 
+    include_once('./template-parts/contracts-block.php')?>
     <!-- /.section production -->
-    <section class="trademarks">
-      <div class="container">
-        <div class="seporator"></div>
-        <h2 class="section-title-trade">
-          собственные <span class="hidden">торговые</span> марки
-        </h2>
-        <div class="trademark-cards">
-          <a href="#" class="trademark-card">
-            <svg class="trademarks-icon">
-              <use href="img/sprite.svg#AGTECH"></use>
-            </svg>
-            <h3 class="trademarks-title">Автохимия AG-Tech</h3>
-            <p class="trademarks-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </a>
-          <a href="#" class="trademark-card">
-            <svg class="trademarks-icon">
-              <use href="img/sprite.svg#AP"></use>
-            </svg>
-            <h3 class="trademarks-title">Автохимия AP</h3>
-            <p class="trademarks-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </a>
-        </div>
-      </div>
-    </section>
+    <?php $block_titile = "собственные марки"; 
+    include_once('./template-parts/trademarks-block.php')?>
     <!-- /.trademarks -->
-    <section class="section founder">
-      <img src="img/founder.jpg" alt="founder" class="founder-photo" />
-      <div class="container founder-container">
-        <div class="founder-content-wrapper">
-          <div class="founder-content">
-            <div class="seporator seporator-founder"></div>
-            <h2 class="section-title title-founder">
-              Отношение к делу и к клиентам
-            </h2>
-            <p class="founder-text">
-              Кстати, интерактивные прототипы описаны максимально подробно.
-              Повседневная практика показывает, что укрепление и развитие
-              внутренней структуры говорит о возможностях соответствующих
-              условий активизации. Внезапно, независимые государства, которые
-              представляют собой яркий пример континентально-европейского типа
-              политической культуры, будут подвергнуты целой серии независимых
-              исследований. С учётом сложившейся международной обстановки,
-              синтетическое тестирование выявляет срочную потребность системы
-              массового участия.
-            </p>
-            <p class="founder-text founder-text-second">
-              А ещё действия представителей оппозиции, превозмогая сложившуюся
-              непростую экономическую ситуацию, в равной степени предоставлены
-              сами себе. Не следует, однако, забывать, что выбранный нами
-              инновационный путь в значительной степени обусловливает важность
-              дальнейших направлений развития.
-            </p>
-            <a href="/about.php" class="button-link link-large-screens"
-              >Подробнее о компании</a
-            >
-            <a href="#" class="button-link link-small-screens"
-              >О нашей миссии</a
-            >
-          </div>
-        </div>
-        <!-- /.founder-content-wrapper -->
-        <!-- /.founder-content -->
-      </div>
-      <!-- /.container -->
-    </section>
+    <?php $founder_block = "Подробнее о компании";  
+    include_once('./template-parts/founder-block.php')
+    ?>
     <!-- /.section founder -->
-    <section class="section clients">
-      <div class="container clients-container">
-        <div class="clients-wrapper">
-          <div class="clients-content">
-            <div class="seporator seporator-clients"></div>
-            <h2 class="section-title title-clients">
-              Производим аэрозольную продукцию для разных сфер
-            </h2>
-            <ul class="clients-list">
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-icon">
-                  <use href="img/sprite.svg#Him"></use>
-                </svg>
-                Химические производства
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-icon">
-                  <use href="img/sprite.svg#Car"></use>
-                </svg>
-                Автомойки
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-icon">
-                  <use href="img/sprite.svg#Eat"></use>
-                </svg>
-                Пищевая продукция
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-icon">
-                  <use href="img/sprite.svg#Brush"></use>
-                </svg>
-                Лаки и краски
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-icon">
-                  <use href="img/sprite.svg#Cosmetic"></use>
-                </svg>
-                Косметические средства
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-icon">
-                  <use href="img/sprite.svg#Car-cosm"></use>
-                </svg>
-                Автомобильная косметика
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-icon">
-                  <use href="img/sprite.svg#Shirt"></use>
-                </svg>
-                Косметика по уходу за одеждой
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-icon">
-                  <use href="img/sprite.svg#Boots"></use>
-                </svg>
-                Косметика по уходу за обувью
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-icon">
-                  <use href="img/sprite.svg#Bricks"></use>
-                </svg>
-                Строительные материалы
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="3" class="client-icon">
-                  <use href="img/sprite.svg#More"></use>
-                </svg>
-                И многих других
-              </li>
-            </ul>
-          </div>
-          <!-- /.clients-content -->
-          <div class="clients-logo-list">
-            <a href="" class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </a>
-            <a href="" class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </a>
-            <a href="" class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </a>
-            <a href="" class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </a>
-            <a href="" class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </a>
-            <a href="" class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </a>
-            <a href="" class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </a>
-            <a href="" class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </a>
-            <a href="" class="clients-logo-item last-clients-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </a>
-          </div>
-          <!-- /.clients-logo -->
-        </div>
-        <!-- /.clients-wrapper -->
-      </div>
-      <!-- /.container clients-container -->
-    </section>
+    <?php 
+    include_once('./template-parts/aerosol-products-block.php')
+    ?>
     <!-- /.section clients -->
     <section class="section blog">
       <div class="container container-blog">

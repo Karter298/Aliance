@@ -66,16 +66,6 @@ html {
   width: 8.75rem;
   height: 2.75rem;
 }
-.header {
-  padding-top: 5.875rem;
-}
-.header-bg-him {
-  background: #f0f2f5;
-  background-repeat: no-repeat;
-  background-position: right 15.625rem bottom;
-  background-image: url("../img/header-img.png");
-  background-size: 30rem;
-}
 .header-image {
   background-image: url("../img/header-bg.jpg");
   background-size: cover; /*что бы картинка на заднем фоне заняла всё пространство*/
@@ -969,16 +959,52 @@ html {
   align-items: center;
   justify-content: center;
 }
+.page-bg-grey {
+  background: #f0f2f5;
+  color: #292d33;
+  padding-top: 5.875rem;
+  margin-bottom: 6.25rem;
+}
+
+.page-header-bg {
+  background: #f0f2f5;
+  background-repeat: no-repeat;
+  background-position: right 15.625rem bottom;
+  background-image: url("../img/header-img.png");
+  background-size: 30rem;
+  color: #292d33;
+  padding-top: 5.875rem;
+  margin-bottom: 6.25rem;
+}
+.page-header-img {
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-image: url("../img/header-bg1.png");
+  color: white;
+  padding-top: 5.875rem;
+  margin-bottom: 6.25rem;
+}
+.page-header-img::before {
+  content: "";
+  position: absolute; /* позиционирование относительно родителя */
+  background: #292d33;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22.875rem;
+  z-index: 0; /* самый  низ в слоях */
+}
 .container-about {
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
+  position: relative;
 }
 .section-title-about {
   font-family: "Bebas Neue Book";
   font-weight: 600;
   font-size: 5rem;
   letter-spacing: 0.6px;
-  color: #292d33;
   margin-top: 1.4375rem;
   margin-bottom: 2rem;
 }
@@ -992,7 +1018,12 @@ html {
   text-decoration: none;
   font-size: 14px;
   line-height: 160%;
+}
+.breadcrumb-item-link-gr {
   color: #828a99;
+}
+.breadcrumb-item-link-white {
+  color: white;
 }
 .breadcrumb-item {
   display: inline-block;
@@ -1000,7 +1031,6 @@ html {
   font-weight: 400;
   font-size: 14px;
   line-height: 160%;
-  color: #292d33;
 }
 .breadcrumbs .breadcrumb-item::before {
   content: "—"; /* Разделитель */

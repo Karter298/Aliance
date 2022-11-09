@@ -69,6 +69,13 @@ html {
 .header {
   padding-top: 5.875rem;
 }
+.header-bg-him {
+  background: #f0f2f5;
+  background-repeat: no-repeat;
+  background-position: right 15.625rem bottom;
+  background-image: url("../img/header-img.png");
+  background-size: 30rem;
+}
 .header-image {
   background-image: url("../img/header-bg.jpg");
   background-size: cover; /*что бы картинка на заднем фоне заняла всё пространство*/

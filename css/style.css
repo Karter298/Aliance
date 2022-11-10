@@ -202,11 +202,27 @@ html {
   color: #fff;
   position: relative;
 }
+.header-features-black {
+  display: flex;
+  min-height: 10.5rem;
+  padding: 0;
+  margin-top: 6.25rem;
+  margin-bottom: 0;
+  list-style: none; /* убирает точки в списке */
+  color: black;
+  position: relative;
+}
 .header-features-item {
   padding: 1.875rem 3.125rem;
   height: auto;
   width: 18rem;
   border: 1px solid rgba(235, 235, 240, 0.2);
+}
+.header-features-item-color {
+  padding: 1.7rem 3.125rem;
+  height: auto;
+  width: 18rem;
+  border: 1px solid #ebebf0;
 }
 
 .slider-buttons {
@@ -218,6 +234,16 @@ html {
   height: 100%;
   flex-basis: 50%;
   border: 1px solid rgba(235, 235, 240, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.slider-button-prev-color,
+.slider-button-next-color {
+  height: 100%;
+  flex-basis: 50%;
+  border: 1px solid #ebebf0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1041,6 +1067,37 @@ html {
 .breadcrumbs .breadcrumb-item:first-child::before {
   content: ""; /* Убираем разделитель для первого пункта */
 }
+.container-expert {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6.25rem;
+}
+.expert-image {
+  width: 30rem;
+  margin-right: 7.5rem;
+}
+.expert-content {
+  width: 50.5rem;
+}
+.expert-text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+}
+.productions-wrapper {
+  display: flex;
+}
+.productions-text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+}
 @media (min-width: 992px) {
   .button-link:hover:before {
     width: 60px;
@@ -1355,7 +1412,7 @@ html {
     margin-bottom: 2.63rem;
   }
   .header-content {
-    padding-top: 4rem;
+    padding-top: 9.8rem;
   }
   .header-features {
     min-height: 9.5rem;

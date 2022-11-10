@@ -1069,15 +1069,17 @@ html {
 }
 .container-expert {
   display: flex;
-  align-items: center;
-  margin-bottom: 6.25rem;
+}
+.expert-title {
+  letter-spacing: 0.0313rem;
+  width: 42rem;
 }
 .expert-image {
   width: 30rem;
   margin-right: 7.5rem;
 }
 .expert-content {
-  width: 50.5rem;
+  margin-top: 3.125rem;
 }
 .expert-text {
   font-family: "Noto Sans";
@@ -1086,6 +1088,7 @@ html {
   font-size: 1rem;
   line-height: 160%;
   color: #828a99;
+  margin-top: -1.375rem;
 }
 .productions-wrapper {
   display: flex;
@@ -1097,7 +1100,52 @@ html {
   font-size: 1rem;
   line-height: 160%;
   color: #828a99;
+  margin-top: -1.375rem;
+  margin-bottom: 2.6875rem;
 }
+.productions-text-two {
+  margin-bottom: 1.9375rem;
+}
+.seporator-production {
+  margin-top: 3.0625rem;
+}
+.title-production {
+  margin-top: 1.5rem;
+  letter-spacing: 0.0187rem;
+}
+.production-image {
+  margin-left: 7.5rem;
+}
+.title-research {
+  max-width: 35rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.3px;
+}
+.texts-research {
+  display: flex;
+  gap: 6.2rem;
+  margin-bottom: 2.125rem;
+}
+.text-research-center {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+  max-width: 39.75rem;
+}
+.blog-slider-block {
+  display: flex;
+  align-items: center;
+  margin-top: 1.875rem;
+  justify-content: end;
+  margin-right: 15.1rem;
+}
+.aerosole-marg {
+  margin-bottom: 15.9rem;
+}
+
 @media (min-width: 992px) {
   .button-link:hover:before {
     width: 60px;

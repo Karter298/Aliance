@@ -56,7 +56,7 @@
             </a>
           </div>
           <!-- If we need navigation buttons -->
-          <div class="blog-slider-footer">
+          <div class="blog-slider-block">
             <div class="blog-slider-buttons primary-buttons-wrapper">
               <div class="blog-slider-button-prev primary-button-prev">
                 <svg width="30" height="20">

@@ -156,7 +156,6 @@ const blogBlockSwiper = new Swiper(".blog-swiper-block", {
   speed: 400,
   autoHeight: true,
   loop: true,
-  slidesOffsetBefore: 240,
   slidesPerView: 1,
   spaceBetween: 30,
   navigation: {
@@ -164,10 +163,24 @@ const blogBlockSwiper = new Swiper(".blog-swiper-block", {
     prevEl: ".blog-slider-button-prev",
   },
   breakpoints: {
-    775: {
-      slidesPerView: 1,
+    375: {
+      loop: true,
+      slidesOffsetBefore: 22,
+      slidesPerView: 1.16,
     },
-    776: {
+    775: {
+      loop: true,
+      slidesOffsetBefore: 100,
+      slidesPerView: 1.4,
+    },
+    900: {
+      loop: true,
+      slidesOffsetBefore: 240,
+      slidesPerView: 2,
+    },
+    1200: {
+      loop: true,
+      slidesOffsetBefore: 250,
       slidesPerView: 2.7,
     },
   },

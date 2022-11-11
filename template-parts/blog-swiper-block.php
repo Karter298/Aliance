@@ -2,57 +2,34 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper blog-swiper-wrapper">
             <!-- Slides -->
-            <a href="#" class="swiper-slide blog-card">
+            <a href="#" class="swiper-slide blog-card-block">
               <img
                 src="img/blog/blog-1.jpg"
                 alt="blog photo"
-                class="blog-card-images"
+                class="blog-card-images blog-images-block"
               />
-              <div class="blog-card-content">
-                <h3 class="blog-card-title">
-                  Современная методология разработки одухотворила всех
-                  причастных
-                </h3>
-                <p class="blog-card-text">
-                  Действия представителей оппозиции, превозмогая сложившуюся
-                  непростую экономическую ситуацию, в равной степени
-                  предоставлены...
-                </p>
-              </div>
             </a>
-            <a href="#" class="swiper-slide blog-card">
+            <a href="#" class="swiper-slide blog-card-block ">
               <img
                 src="img/blog/blog-2.jpg"
                 alt="blog photo"
-                class="blog-card-images"
+                class="blog-card-images blog-images-block"
               />
-              <div class="blog-card-content">
-                <h3 class="blog-card-title">
-                  Сложно сказать, почему жизнь прекрасна
-                </h3>
-                <p class="blog-card-text">
-                  Сложно сказать, почему элементы политического процесса
-                  функционально разнесены на независимые элементы. Безусловно,
-                  высокотехнологичная...
-                </p>
-              </div>
             </a>
-            <a href="#" class="swiper-slide blog-card">
+
+            <a href="#" class="swiper-slide blog-card-block ">
+              <img
+                src="img/blog/blog-1.jpg"
+                alt="blog photo"
+                class="blog-card-images blog-images-block"
+              />
+            </a>
+            <a href="#" class="swiper-slide blog-card-block">
               <img
                 src="img/blog/blog-2.jpg"
                 alt="blog photo"
-                class="blog-card-images"
+                class="blog-card-images blog-images-block"
               />
-              <div class="blog-card-content">
-                <h3 class="blog-card-title">
-                  Сложно сказать, почему жизнь прекрасна
-                </h3>
-                <p class="blog-card-text">
-                  Сложно сказать, почему элементы политического процесса
-                  функционально разнесены на независимые элементы. Безусловно,
-                  высокотехнологичная...
-                </p>
-              </div>
             </a>
           </div>
           <!-- If we need navigation buttons -->

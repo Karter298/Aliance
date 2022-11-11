@@ -556,6 +556,16 @@ html {
   color: #fff;
   justify-content: flex-end;
 }
+.blog-card-block {
+  display: flex;
+  position: relative;
+  min-height: 25rem;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  justify-content: flex-end;
+}
+
 .blog-card-content {
   padding: 3.125rem;
 }
@@ -1075,7 +1085,7 @@ html {
   width: 42rem;
 }
 .expert-image {
-  width: 30rem;
+  height: 30rem;
   margin-right: 7.5rem;
 }
 .expert-content {
@@ -1135,6 +1145,15 @@ html {
   color: #828a99;
   max-width: 39.75rem;
 }
+.text-research-center-none {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+  max-width: 39.75rem;
+}
 .blog-slider-block {
   display: flex;
   align-items: center;
@@ -1144,6 +1163,9 @@ html {
 }
 .aerosole-marg {
   margin-bottom: 15.9rem;
+}
+.production-image-t {
+  display: none;
 }
 
 @media (min-width: 992px) {
@@ -1209,6 +1231,10 @@ html {
     width: 40%;
     margin-left: -5.5rem;
   }
+  .production-image {
+    margin-left: 5.5rem;
+    height: 40rem;
+  }
 }
 @media (max-width: 1200px) {
   .primary-buttons-wrapper {
@@ -1269,6 +1295,13 @@ html {
   }
   .footer-phone {
     font-size: 1.4rem;
+  }
+  .container-expert {
+    display: flex;
+    align-items: center;
+  }
+  .expert-image {
+    height: 18rem;
   }
 }
 @media (max-width: 992px) {
@@ -1433,6 +1466,10 @@ html {
   .footer-info {
     gap: 0px;
   }
+  .expert-image {
+    height: 15rem;
+    margin-right: 3rem;
+  }
 }
 @media (max-width: 900px) {
   .cta-image {
@@ -1443,6 +1480,23 @@ html {
   }
   .cta-form-wrapper {
     margin: auto;
+  }
+  .productions-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .production-image {
+    display: none;
+    height: 40rem;
+    object-fit: contain;
+    margin-left: 0;
+  }
+  .production-image-t {
+    display: inline;
+    height: 40rem;
+    object-fit: contain;
+    margin-left: 0;
+    margin-bottom: 1.5625rem;
   }
 }
 @media (max-width: 766px) {
@@ -1612,6 +1666,70 @@ html {
   .footer-menu-columns-2 {
     columns: 24rem auto;
     min-width: 20rem;
+  }
+  .expert-content {
+    margin-left: 1.0625rem;
+  }
+  .container-expert {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .expert-title {
+    line-height: 130%;
+    letter-spacing: 1.2px;
+  }
+  .expert-image {
+    height: 28.8rem;
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+  }
+  .expert-text {
+    font-size: 14px;
+    width: 44.8rem;
+  }
+  .production-image-t {
+    display: inline;
+    height: 36rem;
+    object-fit: contain;
+    margin-left: 0;
+    margin-bottom: 3.5625rem;
+  }
+  .container-swiper {
+    margin-bottom: -2.8rem;
+  }
+  .productions {
+    margin-bottom: -4rem;
+  }
+  .title-production {
+    margin-bottom: 2.9rem;
+  }
+  .productions-text {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .productions-text-two {
+    font-size: 14px;
+  }
+  .research-center {
+    margin-bottom: -13px;
+  }
+  .text-research-center-none {
+    display: none;
+  }
+  .text-research-center {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+  .blog-card-block {
+    min-height: 17rem;
+  }
+  .blog-slider-block {
+    margin-right: 1.1rem;
+    margin-top: 1rem;
+  }
+  .aerosole-marg {
+    margin-bottom: 9.7rem;
   }
 }
 @media (max-width: 576px) {
@@ -1816,7 +1934,10 @@ html {
     font-size: 14px;
     margin: 0;
   }
-
+  .expert-text {
+    font-size: 14px;
+    width: 28.8rem;
+  }
   .input-group-vertical {
     margin-top: 17px;
   }
@@ -1826,6 +1947,16 @@ html {
   .modal-form-button {
     height: 5rem;
     margin-top: -3px;
+  }
+  .expert-title {
+    max-width: 30rem;
+  }
+  .container-about {
+    padding-bottom: 4rem;
+    margin-bottom: -23px;
+  }
+  .container-expert {
+    margin-bottom: -2.8rem;
   }
 }
 @media (max-width: 455px) {
@@ -1848,6 +1979,14 @@ html {
   .breadcrumb-item {
     font-size: 12px;
   }
+  .expert-title {
+    line-height: 130%;
+    letter-spacing: 1.2px;
+  }
+  .blog-images-block {
+    height: 16.1875rem;
+    width: 330px;
+  }
 }
 @media (max-width: 374px) {
   .cta-form {
@@ -1864,6 +2003,25 @@ html {
   }
   .button-company {
     padding: 1.7rem 5.3rem;
+  }
+  .expert-title {
+    width: 20rem;
+  }
+  .expert-image {
+    height: 23.8rem;
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+  }
+  .expert-text {
+    font-size: 14px;
+    width: 25.8rem;
+  }
+  .blog-images-block {
+    height: 16.1875rem;
+    width: 330px;
+  }
+  .production-image-t {
+    height: 31rem;
   }
 }
 @media (max-height: 590px) {

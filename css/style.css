@@ -1167,7 +1167,39 @@ html {
 .production-image-t {
   display: none;
 }
-
+.contracts-him {
+  margin-top: -3.1875rem;
+  margin-bottom: -3.1875rem;
+}
+.title-seo {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 160%;
+  color: #292d33;
+  margin-bottom: 0.6875rem;
+}
+.text-seo {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828a99;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+.link-seo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.seo-readmore {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: #5c8ee6;
+}
 @media (min-width: 992px) {
   .button-link:hover:before {
     width: 60px;
@@ -1730,6 +1762,17 @@ html {
   }
   .aerosole-marg {
     margin-bottom: 9.7rem;
+  }
+  .contracts-him {
+    margin-top: -2rem;
+    margin-bottom: -4rem;
+  }
+  .title-seo {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .seo-readmore {
+    letter-spacing: -1px;
   }
 }
 @media (max-width: 576px) {

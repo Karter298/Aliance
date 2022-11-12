@@ -20,6 +20,7 @@ html {
     url("../fonts/BebasNeueBook.woff2") format("woff2");
   font-weight: 400;
   font-weight: normal;
+  font-display: swap;
   font-style: normal;
 }
 .container {
@@ -169,7 +170,7 @@ html {
   background: #5c8ee6;
 }
 .header-content {
-  padding-top: 9.375rem;
+  padding-top: 15.3rem;
   position: relative;
   z-index: 1;
   color: #fff;
@@ -778,8 +779,10 @@ html {
   margin-left: 0.75rem;
 }
 .footer-seporetor {
+  border: none;
   color: #ebebf0;
   background-color: #ebebf0;
+  height: 2px;
   margin: 0;
 }
 .footer-bottom {
@@ -2287,6 +2290,10 @@ html {
   }
   .production-image-t {
     height: 31rem;
+  }
+  .auto-chemistry-img {
+    max-width: 24.5625rem;
+    height: 36rem;
   }
 }
 @media (max-height: 590px) {

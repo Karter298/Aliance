@@ -3,7 +3,7 @@ $page_title = 'О компании';
 $header_style = "page-bg-grey";
 $breadcrumb_style = "breadcrumb-item-link-gr";
 include_once('header-page.php');?>
-<div class="container container-expert">
+ <div class="container container-expert">
   <img src="img/expert-logo.jpg" alt="Экспертное мнение" class="expert-image">
   <div class="expert-content">
     <div class="seporator"></div>

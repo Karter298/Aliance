@@ -102,7 +102,7 @@
         <!-- /.footer-top -->
       </div>
       <!-- /.container -->
-      <hr color="#ebebf0" class="footer-seporetor" />
+      <hr class="footer-seporetor"/>
       <div class="container">
         <div class="footer-bottom">
           <div class="footer-menu-wrapper">
@@ -167,7 +167,7 @@
         <!-- /.footer-bottom -->
       </div>
       <!-- /.container -->
-      <hr color="#ebebf0" class="footer-seporetor" />
+      <hr class="footer-seporetor"/>
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-legal">

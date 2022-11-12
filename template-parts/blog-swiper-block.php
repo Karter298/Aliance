@@ -4,14 +4,14 @@
             <!-- Slides -->
             <a href="#" class="swiper-slide blog-card-block">
               <img
-                src="img/blog/blog-1.jpg"
+                src="img/blog/blog-2.jpg"
                 alt="blog photo"
                 class="blog-card-images blog-images-block"
               />
             </a>
             <a href="#" class="swiper-slide blog-card-block ">
               <img
-                src="img/blog/blog-2.jpg"
+                src="img/blog/blog-1.jpg"
                 alt="blog photo"
                 class="blog-card-images blog-images-block"
               />
@@ -19,14 +19,14 @@
 
             <a href="#" class="swiper-slide blog-card-block ">
               <img
-                src="img/blog/blog-1.jpg"
+                src="img/blog/blog-2.jpg"
                 alt="blog photo"
                 class="blog-card-images blog-images-block"
               />
             </a>
             <a href="#" class="swiper-slide blog-card-block">
               <img
-                src="img/blog/blog-2.jpg"
+                src="img/blog/blog-1.jpg"
                 alt="blog photo"
                 class="blog-card-images blog-images-block"
               />

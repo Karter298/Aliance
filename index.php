@@ -315,7 +315,7 @@
             <!-- Slides -->
             <a href="#" class="swiper-slide blog-card">
               <img
-                src="img/blog/blog-1.jpg"
+                src="img/blog/blog-2.jpg"
                 alt="blog photo"
                 class="blog-card-images"
               />
@@ -333,7 +333,7 @@
             </a>
             <a href="#" class="swiper-slide blog-card">
               <img
-                src="img/blog/blog-2.jpg"
+                src="img/blog/blog-1.jpg"
                 alt="blog photo"
                 class="blog-card-images"
               />
@@ -351,6 +351,24 @@
             <a href="#" class="swiper-slide blog-card">
               <img
                 src="img/blog/blog-2.jpg"
+                alt="blog photo"
+                class="blog-card-images"
+              />
+              <div class="blog-card-content">
+                <h3 class="blog-card-title">
+                  Современная методология разработки одухотворила всех
+                  причастных
+                </h3>
+                <p class="blog-card-text">
+                  Действия представителей оппозиции, превозмогая сложившуюся
+                  непростую экономическую ситуацию, в равной степени
+                  предоставлены...
+                </p>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide blog-card">
+              <img
+                src="img/blog/blog-1.jpg"
                 alt="blog photo"
                 class="blog-card-images"
               />

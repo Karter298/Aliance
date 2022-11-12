@@ -41,12 +41,12 @@
           <div class="slider-buttons">
             <div class="slider-button-prev-color">
               <svg class="features-icon-button" width="36" height="24">
-                <use href="img/sprite.svg#slider-button-prev"></use>
+                <use href="img/sprite.svg#slider-button-prev-black"></use>
               </svg>
             </div>
             <div class="slider-button-next-color">
               <svg class="features-icon-button" width="36" height="24">
-                <use href="img/sprite.svg#slider-button-next"></use>
+                <use href="img/sprite.svg#slider-button-next-black"></use>
               </svg>
             </div>
           </div>

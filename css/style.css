@@ -1307,6 +1307,18 @@ html {
 .auto-chemistry-aerosol {
   margin-bottom: 15.875rem;
 }
+.aliance-policy {
+  margin-top: 6.3rem;
+}
+.policy-text {
+  font-size: 16px;
+  line-height: 160%;
+  color: #292d33;
+  margin: 0;
+}
+.policy-text:not(:last-child) {
+  margin-bottom: 1.375rem;
+}
 
 @media (min-width: 992px) {
   .button-link:hover:before {

@@ -1048,7 +1048,7 @@ html {
   margin: 0;
   padding: 0; /* Убираем отступы */
   display: inline-block;
-  margin-left: -0.8125rem;
+  margin-left: 0.1875rem;
 }
 .breadcrumb-item-link {
   text-decoration: none;
@@ -1214,6 +1214,10 @@ html {
   font-size: 16px;
   line-height: 160%;
   color: #828a99;
+  margin-bottom: 1.25rem;
+}
+.auto-chemistry-text::not(:last-child) {
+  margin-bottom: 1.25rem;
 }
 .title-auto-chemistry {
   letter-spacing: 0.4px;
@@ -1298,7 +1302,7 @@ html {
   margin-bottom: 8.9375rem;
 }
 .auto-chemistry-steps {
-  margin-bottom: 11.0625rem;
+  margin-bottom: 9.0625rem;
 }
 .auto-chemistry-aerosol {
   margin-bottom: 15.875rem;
@@ -1916,7 +1920,7 @@ html {
     height: 39rem;
   }
   .auto-chemistry {
-    margin-bottom: -30px;
+    margin-bottom: -33px;
   }
   .auto-container-swiper {
     margin-bottom: -2.7rem;
@@ -1958,6 +1962,9 @@ html {
   }
   .auto-chemistry-aerosol {
     margin-bottom: 9.8rem;
+  }
+  .trademarks-bloc {
+    margin-bottom: 117px;
   }
 }
 @media (max-width: 576px) {

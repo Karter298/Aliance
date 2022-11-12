@@ -154,7 +154,7 @@
            <h2 class="section-title-about">
           <?php echo $page_title ?>
         </h2>
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs breadcrumbs-him">
          <li class="breadcrumb-item"><a class="breadcrumb-item-link <?=$breadcrumb_style;?>" href="/index.php">Главная</a></li>
          <li class="breadcrumb-item"><a class="breadcrumb-item-link <?=$breadcrumb_style;?>" href="/contracts.php">Контрактное производство</a></li>
          <li class="breadcrumb-item breadcrumb-item-last"><?php echo $page_title ?></li>

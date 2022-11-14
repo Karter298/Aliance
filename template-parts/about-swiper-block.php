@@ -51,4 +51,4 @@
             </div>
           </div>
           <!-- /.slider-buttons -->
-        </div>
+</div>

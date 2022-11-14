@@ -1,6 +1,10 @@
-   <section class="cta">
+ <section class="cta">
       <div class="bg-grey section-cta">
-        <img src="img/cta.png" alt="call to action" class="cta-image" />
+        <picture>
+         <source type="image/webp" srcset="img/cta.webp">
+         <source type="image/jpeg" srcset="img/cta.png">
+         <img src="img/cta.png" alt="call to action" class="cta-image">
+        </picture>
         <div class="container cta-form-wrapper">
           <form action="handler.php" method="POST" class="cta-form">
             <h2 class="section-title cta-form-titile">Хотите сотрудничать?</h2>
@@ -18,8 +22,7 @@
                   class="input"
                   placeholder=" "
                   maxlength="100"
-                  required
-                />
+                  required/>
                 <label class="input-group-label" for="user-name">Имя</label>
               </div>
               <!-- /.input-group -->
@@ -31,11 +34,8 @@
                   class="input phone-mask"
                   placeholder=" "
                   maxlength="30"
-                  required
-                />
-                <label class="input-group-label" for="user-phone"
-                  >Номер телефона</label
-                >
+                  required/>
+                <label class="input-group-label" for="user-phone">Номер телефона</label>
               </div>
               <!-- /.input-group -->
             </div>
@@ -81,9 +81,7 @@
             <svg class="phone-icon" width="24" height="24">
               <use href="img/sprite.svg#mail"></use>
             </svg>
-            <a href="mailto:a.dragunov@tdaliance.ru" class="footer-info-mail"
-              >a.dragunov@tdaliance.ru</a
-            >
+            <a href="mailto:a.dragunov@tdaliance.ru" class="footer-info-mail">a.dragunov@tdaliance.ru</a>
           </div>
           <div class="footer-social">
             <a href="#" class="footer-social-link">
@@ -115,9 +113,7 @@
                 <a href="#" class="footer-menu-link">Бытовая химия</a>
               </li>
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link"
-                  >Дезинфицирующие средства</a
-                >
+                <a href="#" class="footer-menu-link">Дезинфицирующие средства</a>
               </li>
               <li class="footer-menu-item">
                 <a href="#" class="footer-menu-link">Пищевые аэрозоли</a>
@@ -146,19 +142,13 @@
           <div class="footer-menu-wrapper">
             <ul class="footer-menu-list">
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link footer-menu-link-bold"
-                  >О компании</a
-                >
+                <a href="#" class="footer-menu-link footer-menu-link-bold">О компании</a>
               </li>
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link footer-menu-link-bold"
-                  >Новости</a
-                >
+                <a href="#" class="footer-menu-link footer-menu-link-bold">Новости</a>
               </li>
               <li class="footer-menu-item">
-                <a href="/contacts.php" class="footer-menu-link footer-menu-link-bold"
-                  >Контакты</a
-                >
+                <a href="/contacts.php" class="footer-menu-link footer-menu-link-bold">Контакты</a>
               </li>
             </ul>
           </div>
@@ -211,11 +201,8 @@
                 type="text"
                 class="input input-modal"
                 placeholder=" "
-                name="username"
-              />
-              <label class="input-group-label modal-input-label" for="user-name"
-                >Имя</label
-              >
+                name="username"/>
+              <label class="input-group-label modal-input-label" for="user-name">Имя</label>
             </div>
             <!-- /.input-group -->
             <div class="input-group input-modal-group">
@@ -224,13 +211,10 @@
                 type="tel"
                 class="input input-modal phone-mask"
                 placeholder=" "
-                name="userphone"
-              />
+                name="userphone"/>
               <label
                 class="input-group-label modal-input-label"
-                for="user-phone"
-                >Номер телефона</label
-              >
+                for="user-phone">Номер телефона</label>
             </div>
             <!-- /.input-group -->
           </div>
@@ -260,7 +244,11 @@
             <use href="img/sprite.svg#close"></use>
           </svg>
         </a>
-        <img src="img/thanks_illu.png" alt="thanks to msg" class="modal-thx-image">
+        <picture>
+         <source type="image/webp" srcset="img/thanks_illu.webp">
+         <source type="image/jpeg" srcset="thanks_illu.png">
+         <img src="img/thanks_illu.png" alt="thanks to msg" class="modal-thx-image">
+        </picture>
         <h2 class="modal-thx-title">Спасибо за заявку!</h2>
         <p class="modal-text modal-text">
           Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
@@ -274,5 +262,4 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/just-validate.production.min.js"></script>
     <script src="js/main.js"></script>
-  </body>
-</html>
+ 

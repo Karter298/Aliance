@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title><?php echo $page_title ?> - Aliance Production</title>
   </head>
   <body>
@@ -31,17 +30,13 @@
               <a class="mobile-submenu-link" href="#">Бытовая химия</a>
             </li>
             <li class="mobile-submenu-item">
-              <a class="mobile-submenu-link" href="#"
-                >Дезинфицирующие средства</a
-              >
+              <a class="mobile-submenu-link" href="#">Дезинфицирующие средства</a>
             </li>
             <li class="mobile-submenu-item">
               <a class="mobile-submenu-link" href="#">Пищевые аэрозоли</a>
             </li>
             <li class="mobile-submenu-item">
-              <a class="mobile-submenu-link" href="#"
-                >Косметическая продукция</a
-              >
+              <a class="mobile-submenu-link" href="#">Косметическая продукция</a>
             </li>
             <li class="mobile-submenu-item">
               <a class="mobile-submenu-link" href="#">Краски аэрозольные</a>
@@ -80,9 +75,7 @@
         <svg class="mail-icon" width="24" height="24">
           <use href="img/sprite.svg#mail"></use>
         </svg>
-        <a href="mailto:a.dragunov@tdaliance.ru" class="mobile-info-mail"
-          >a.dragunov@tdaliance.ru</a
-        >
+        <a href="mailto:a.dragunov@tdaliance.ru" class="mobile-info-mail">a.dragunov@tdaliance.ru</a>
       </div>
       <!-- /.mobile-info -->
       <div class="social">
@@ -135,9 +128,7 @@
         <svg class="phone-icon" width="24" height="24">
           <use href="img/sprite.svg#phone"></use>
         </svg>
-        <a href="tel:+74996861014" class="header-phone-link"
-          >+7 (499) 686-10-14</a
-        >
+        <a href="tel:+74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
       </div>
       <!-- /.heder-phone -->
       <button class="navbar-button button" data-toggle="modal" data-target="#feedback-modal">

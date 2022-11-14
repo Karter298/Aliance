@@ -1104,6 +1104,9 @@ html {
   color: #828a99;
   margin-top: -1.375rem;
 }
+.container-swiper {
+  margin-top: -0.3125rem;
+}
 .productions-wrapper {
   display: flex;
 }
@@ -1120,6 +1123,9 @@ html {
 .productions-text-two {
   margin-bottom: 1.9375rem;
 }
+.clients-list-ubout {
+  gap: 0.1875rem;
+}
 .seporator-production {
   margin-top: 3.0625rem;
 }
@@ -1129,6 +1135,7 @@ html {
 }
 .production-image {
   margin-left: 7.5rem;
+  max-width: 37.5rem;
 }
 .title-research {
   max-width: 35rem;
@@ -1207,8 +1214,12 @@ html {
 .container-auto-chemistry {
   display: flex;
 }
+.auto-container-swiper {
+  margin-bottom: -0.25rem;
+}
 .auto-chemistry-img {
   margin-right: 7.5rem;
+  max-width: 37.5rem;
 }
 .auto-chemistry-text {
   font-family: "Noto Sans";
@@ -1303,6 +1314,9 @@ html {
 }
 .type-chemistry {
   margin-bottom: 8.9375rem;
+}
+.blog-swiper-block {
+  margin-bottom: 9.625rem;
 }
 .auto-chemistry-steps {
   margin-bottom: 9.0625rem;

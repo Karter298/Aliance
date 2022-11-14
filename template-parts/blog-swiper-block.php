@@ -3,33 +3,32 @@
           <div class="swiper-wrapper blog-swiper-wrapper">
             <!-- Slides -->
             <a href="#" class="swiper-slide blog-card-block">
-              <img
-                src="img/blog/blog-2.jpg"
-                alt="blog photo"
-                class="blog-card-images blog-images-block"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/blog/blog-2.webp">
+                <source type="image/jpeg" srcset="img/blog/blog-2.jpg">
+                <img src="img/blog/blog-2.jpg" alt="blog photo" class="blog-card-images blog-images-block">
+              </picture>
             </a>
             <a href="#" class="swiper-slide blog-card-block ">
-              <img
-                src="img/blog/blog-1.jpg"
-                alt="blog photo"
-                class="blog-card-images blog-images-block"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/blog/blog-1.webp">
+                <source type="image/jpeg" srcset="img/blog/blog-1.jpg">
+                <img src="img/blog/blog-1.jpg" alt="blog photo" class="blog-card-images blog-images-block">
+              </picture>
             </a>
-
             <a href="#" class="swiper-slide blog-card-block ">
-              <img
-                src="img/blog/blog-2.jpg"
-                alt="blog photo"
-                class="blog-card-images blog-images-block"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/blog/blog-2.webp">
+                <source type="image/jpeg" srcset="img/blog/blog-2.jpg">
+                <img src="img/blog/blog-2.jpg" alt="blog photo" class="blog-card-images blog-images-block">
+              </picture>
             </a>
             <a href="#" class="swiper-slide blog-card-block">
-              <img
-                src="img/blog/blog-1.jpg"
-                alt="blog photo"
-                class="blog-card-images blog-images-block"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/blog/blog-1.webp">
+                <source type="image/jpeg" srcset="img/blog/blog-1.jpg">
+                <img src="img/blog/blog-1.jpg" alt="blog photo" class="blog-card-images blog-images-block">
+              </picture>
             </a>
           </div>
           <!-- If we need navigation buttons -->
@@ -47,4 +46,4 @@
               </div>
             </div>
           </div>
-        </div>
+</div>

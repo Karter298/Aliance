@@ -34,13 +34,11 @@
           echo '<a href="/about.php" class="button-link link-large-screens">'. $founder_block .'</a>';
         }
         ?>
-            <a href="#" class="button-link link-small-screens"
-              >О нашей миссии</a
-            >
+            <a href="#" class="button-link link-small-screens">О нашей миссии</a>
           </div>
         </div>
         <!-- /.founder-content-wrapper -->
         <!-- /.founder-content -->
       </div>
       <!-- /.container -->
-    </section>
+</section>

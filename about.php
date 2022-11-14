@@ -3,8 +3,12 @@ $page_title = 'О компании';
 $header_style = "page-bg-grey";
 $breadcrumb_style = "breadcrumb-item-link-gr";
 include_once('header-page.php');?>
- <div class="container container-expert">
-  <img src="img/expert-logo.jpg" alt="Экспертное мнение" class="expert-image">
+<div class="container container-expert">
+  <picture>
+    <source type="image/webp" srcset="img/expert-logo.webp">
+    <source type="image/jpeg" srcset="img/expert-logo.jpg">
+    <img src="img/expert-logo.jpg" alt="Экспертное мнение" class="expert-image">
+  </picture>
   <div class="expert-content">
     <div class="seporator"></div>
     <h2 class="section-title expert-title">мы - эксперты в области производства химии</h2>
@@ -24,14 +28,18 @@ include_once('header-page.php');?>
          <h2 class="section-title title-production">
             Наше производство
           </h2>
-          <img src="img/produktions-img.png" alt="Наше производство" class="production-image-t">
+          <picture>
+           <source type="image/webp" srcset="img/produktions-img.webp">
+           <source type="image/jpeg" srcset="img/produktions-img.png">
+           <img src="img/produktions-img.png" alt="Наше производство" class="production-image-t">
+          </picture>
           <p class="productions-text">
             Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает широкому кругу (специалистов) участие в формировании глубокомысленных рассуждений. Но граница обучения кадров создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса кластеризации усилий.
           </p>
           <p class="productions-text productions-text-two">
             Реализация намеченных плановых заданий, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня требует анализа анализа существующих паттернов поведения.
           </p>
-        <ul class="clients-list">
+        <ul class="clients-list clients-list-ubout">
           <li class="clients-list-item">
             <svg width="30" height="30" class="client-icon">
               <use href="img/sprite.svg#Car"></use>
@@ -70,7 +78,11 @@ include_once('header-page.php');?>
           </li>
         </ul>
       </div>
-      <img src="img/produktions-img.png" alt="Наше производство" class="production-image">
+      <picture>
+           <source type="image/webp" srcset="img/produktions-img.webp">
+           <source type="image/jpeg" srcset="img/produktions-img.png">
+           <img src="img/produktions-img.png" alt="Наше производство" class="production-image">
+      </picture>
     </div>
   </div>
 </section>
@@ -93,7 +105,4 @@ include_once('header-page.php');?>
 <div class="aerosole-marg">
   <?php include_once('./template-parts/aerosol-products-block.php');?>
 </div>
-
-
-
 <?php include_once('footer.php');?>

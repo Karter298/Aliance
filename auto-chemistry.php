@@ -6,7 +6,11 @@ include_once('header-page-alt.php');
 ?>
 <section class="auto-chemistry">
 <div class="container container-auto-chemistry">
-  <img src="img/auto-chim.png" alt="Контрактное производство автомобильной химии" class="auto-chemistry-img">
+  <picture>
+    <source type="image/webp" srcset="img/auto-chim.webp">
+    <source type="image/jpeg" srcset="img/auto-chim.png">
+    <img src="img/auto-chim.png" alt="Контрактное производство автомобильной химии" class="auto-chemistry-img">
+  </picture>
   <div class="auto-chemistry-content">
     <div class="seporator seporator-auto-chemistry"></div>
     <h2 class="section-title title-auto-chemistry">Контрактное производство автомобильной химии</h2>
@@ -85,7 +89,11 @@ include_once('header-page-alt.php');
         </ul>
     </div>
   </div>
-  <img src="img/manufacturing.png" alt="manufacturing" class="manufacturing-img" />
+  <picture>
+    <source type="image/webp" srcset="img/manufacturing.webp">
+    <source type="image/jpeg" srcset="img/manufacturing.png">
+    <img src="img/manufacturing.png" alt="manufacturing" class="manufacturing-img">
+  </picture>
 </section>
 <section class="section type-chemistry">
   <div class="container type-chemistry-container">

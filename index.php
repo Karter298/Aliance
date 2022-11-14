@@ -31,15 +31,13 @@
               <a class="mobile-submenu-link" href="#">Бытовая химия</a>
             </li>
             <li class="mobile-submenu-item">
-              <a class="mobile-submenu-link" href="#"
-                >Дезинфицирующие средства</a>
+              <a class="mobile-submenu-link" href="#">Дезинфицирующие средства</a>
             </li>
             <li class="mobile-submenu-item">
               <a class="mobile-submenu-link" href="#">Пищевые аэрозоли</a>
             </li>
             <li class="mobile-submenu-item">
-              <a class="mobile-submenu-link" href="#"
-                >Косметическая продукция</a>
+              <a class="mobile-submenu-link" href="#">Косметическая продукция</a>
             </li>
             <li class="mobile-submenu-item">
               <a class="mobile-submenu-link" href="#">Краски аэрозольные</a>
@@ -78,9 +76,7 @@
         <svg class="mail-icon" width="24" height="24">
           <use href="img/sprite.svg#mail"></use>
         </svg>
-        <a href="mailto:a.dragunov@tdaliance.ru" class="mobile-info-mail"
-          >a.dragunov@tdaliance.ru</a
-        >
+        <a href="mailto:a.dragunov@tdaliance.ru" class="mobile-info-mail">a.dragunov@tdaliance.ru</a>
       </div>
       <!-- /.mobile-info -->
       <div class="social">
@@ -133,9 +129,7 @@
         <svg class="phone-icon" width="24" height="24">
           <use href="img/sprite.svg#phone"></use>
         </svg>
-        <a href="tel:+74996861014" class="header-phone-link"
-          >+7 (499) 686-10-14</a
-        >
+        <a href="tel:+74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
       </div>
       <!-- /.heder-phone -->
       <button class="navbar-button button" data-toggle="modal" data-target="#feedback-modal">
@@ -288,7 +282,7 @@
     <?php $contracts_block = "Контрактное производство"; 
     include_once('./template-parts/contracts-block.php')?>
     <!-- /.section production -->
-    <?php $block_titile = "собственные марки"; 
+    <?php $block_titile = "собственные <span class='hidden'>торговые</span> марки"; 
     include_once('./template-parts/trademarks-block.php')?>
     <!-- /.trademarks -->
     <?php $founder_block = "Подробнее о компании";  
@@ -311,11 +305,11 @@
           <div class="swiper-wrapper blog-swiper-wrapper">
             <!-- Slides -->
             <a href="#" class="swiper-slide blog-card">
-              <img
-                src="img/blog/blog-2.jpg"
-                alt="blog photo"
-                class="blog-card-images"
-              />
+              <picture>
+               <source type="image/webp" srcset="img/blog/blog-1.webp">
+               <source type="image/jpeg" srcset="img/blog/blog-1.jpg">
+               <img src="img/blog/blog-1.jpg" alt="blog photo" class="blog-card-images">
+              </picture>
               <div class="blog-card-content">
                 <h3 class="blog-card-title">
                   Современная методология разработки одухотворила всех
@@ -329,11 +323,11 @@
               </div>
             </a>
             <a href="#" class="swiper-slide blog-card">
-              <img
-                src="img/blog/blog-1.jpg"
-                alt="blog photo"
-                class="blog-card-images"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/blog/blog-2.webp">
+                <source type="image/jpeg" srcset="img/blog/blog-2.jpg">
+                <img src="img/blog/blog-2.jpg" alt="blog photo" class="blog-card-images">
+              </picture>
               <div class="blog-card-content">
                 <h3 class="blog-card-title">
                   Сложно сказать, почему жизнь прекрасна
@@ -346,11 +340,11 @@
               </div>
             </a>
             <a href="#" class="swiper-slide blog-card">
-              <img
-                src="img/blog/blog-2.jpg"
-                alt="blog photo"
-                class="blog-card-images"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/blog/blog-1.webp">
+                <source type="image/jpeg" srcset="img/blog/blog-1.jpg">
+                <img src="img/blog/blog-1.jpg" alt="blog photo" class="blog-card-images">
+              </picture>
               <div class="blog-card-content">
                 <h3 class="blog-card-title">
                   Современная методология разработки одухотворила всех
@@ -364,11 +358,11 @@
               </div>
             </a>
             <a href="#" class="swiper-slide blog-card">
-              <img
-                src="img/blog/blog-1.jpg"
-                alt="blog photo"
-                class="blog-card-images"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/blog/blog-2.webp">
+                <source type="image/jpeg" srcset="img/blog/blog-2.jpg">
+                <img src="img/blog/blog-2.jpg" alt="blog photo" class="blog-card-images">
+              </picture>
               <div class="blog-card-content">
                 <h3 class="blog-card-title">
                   Сложно сказать, почему жизнь прекрасна
@@ -377,6 +371,24 @@
                   Сложно сказать, почему элементы политического процесса
                   функционально разнесены на независимые элементы. Безусловно,
                   высокотехнологичная...
+                </p>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide blog-card">
+              <picture>
+                <source type="image/webp" srcset="img/blog/blog-1.webp">
+                <source type="image/jpeg" srcset="img/blog/blog-1.jpg">
+                <img src="img/blog/blog-1.jpg" alt="blog photo" class="blog-card-images">
+              </picture>
+              <div class="blog-card-content">
+                <h3 class="blog-card-title">
+                  Современная методология разработки одухотворила всех
+                  причастных
+                </h3>
+                <p class="blog-card-text">
+                  Действия представителей оппозиции, превозмогая сложившуюся
+                  непростую экономическую ситуацию, в равной степени
+                  предоставлены...
                 </p>
               </div>
             </a>

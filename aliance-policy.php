@@ -26,4 +26,4 @@ include_once('header-page.php');
     </p>
   </div>
 </section>
-<?php include_once('footer.php');?>
+<?php include_once('footer-policy.php');?>

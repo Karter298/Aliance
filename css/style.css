@@ -1326,6 +1326,7 @@ html {
 }
 .aliance-policy {
   margin-top: 6.3rem;
+  margin-bottom: 9.1rem;
 }
 .policy-text {
   font-size: 16px;
@@ -1901,7 +1902,7 @@ html {
     margin-bottom: -2.8rem;
   }
   .productions {
-    margin-bottom: -4rem;
+    margin-bottom: -2.4rem;
   }
   .title-production {
     margin-bottom: 2.9rem;
@@ -1931,7 +1932,8 @@ html {
     margin-top: 1rem;
   }
   .aerosole-marg {
-    margin-bottom: 9.7rem;
+    margin-bottom: 8.7rem;
+    margin-top: -1.3rem;
   }
   .contracts-him {
     margin-top: -2rem;
@@ -1988,12 +1990,16 @@ html {
   }
   .auto-chemistry-steps {
     margin-bottom: -1.2rem;
+    margin-top: -1.6rem;
   }
   .auto-chemistry-aerosol {
-    margin-bottom: 9.8rem;
+    margin-bottom: 8.8rem;
   }
   .trademarks-bloc {
     margin-bottom: 117px;
+  }
+  .clients-index {
+    margin-bottom: -0.9rem;
   }
 }
 @media (max-width: 576px) {
@@ -2047,6 +2053,7 @@ html {
   .title-founder {
     letter-spacing: 1.2px;
     margin-bottom: 18px;
+    max-width: 24.75rem;
   }
   .founder-text {
     line-height: 185%;
@@ -2225,11 +2232,29 @@ html {
   .auto-chemistry-img {
     max-width: 28.5625rem;
     height: 36rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   .auto-chemistry-text {
     margin-top: -5px;
     font-size: 14px;
     line-height: 158%;
+  }
+  .breadcrumbs {
+    margin-left: -0.625rem;
+  }
+  .founder-photo-about {
+    margin-bottom: 1.3rem;
+  }
+  .aliance-policy {
+    margin-top: 6.5rem;
+    margin-bottom: 8rem;
+  }
+  .policy-text {
+    font-size: 14px;
+  }
+  .policy-text:not(:last-child) {
+    margin-bottom: 0.3rem;
   }
 }
 @media (max-width: 455px) {
@@ -2262,6 +2287,10 @@ html {
   }
   .auto-chemistry-content {
     margin-top: 2.5rem;
+  }
+  .section-title-about {
+    word-wrap: break-word;
+    max-width: 310px;
   }
 }
 @media (max-width: 436px) {
@@ -2308,6 +2337,8 @@ html {
   .auto-chemistry-img {
     max-width: 24.5625rem;
     height: 36rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media (max-height: 590px) {

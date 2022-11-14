@@ -127,7 +127,7 @@
                 <img src="img/client.png" alt="Client" class="clients-logo">
               </picture>
             </a>
-            <a href="#" class="clients-logo-item">
+            <a href="#" class="clients-logo-item last-clients-item">
               <picture>
                 <source type="image/webp" srcset="img/client.webp">
                 <source type="image/jpeg" srcset="img/client.png">

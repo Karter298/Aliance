@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -67,8 +68,11 @@ html {
   width: 8.75rem;
   height: 2.75rem;
 }
-.header-image {
+.no-webp .header-image {
   background-image: url("../img/header-bg.jpg");
+}
+.header-image {
+  background-image: url("../img/header-bg.webp");
   background-size: cover; /*что бы картинка на заднем фоне заняла всё пространство*/
   background-repeat: no-repeat; /*картинка на заднем фоне не будет повторяться*/
   background-position: center bottom -54px; /*фон прогружается по центу*/
@@ -474,6 +478,7 @@ html {
   padding-right: 6.25rem;
   letter-spacing: 0.5px;
   margin-bottom: 1.8125rem;
+  max-width: 31rem;
 }
 .founder-content {
   max-width: 45rem;

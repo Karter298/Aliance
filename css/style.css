@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap");
+@import url("swiper-bundle.min.css");
+@import url("normalize.css");
 * {
   box-sizing: border-box;
 }
@@ -1342,7 +1344,41 @@ html {
 .policy-text:not(:last-child) {
   margin-bottom: 1.375rem;
 }
-
+.blog {
+  margin-top: 6rem;
+}
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.875rem;
+}
+.paginations {
+  display: flex;
+  justify-content: end;
+  margin-top: 2.875rem;
+  margin-right: 14.625rem;
+}
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+.pagination-number {
+}
+.pagination-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #292d33;
+  padding: 12px 20px;
+}
+.pagination-activ {
+  border: 1px solid #5c8ee6;
+  color: #5c8ee6;
+  margin-right: 0.625rem;
+}
 @media (min-width: 992px) {
   .button-link:hover:before {
     width: 60px;
@@ -1490,6 +1526,9 @@ html {
     width: 37.7%;
     height: 86%;
     object-fit: cover;
+  }
+  .paginations {
+    margin-top: 2.875rem;
   }
 }
 @media (max-width: 992px) {
@@ -2006,6 +2045,25 @@ html {
   .clients-index {
     margin-bottom: -0.9rem;
   }
+  .blog-cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.625rem 0;
+  }
+  .paginations {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    margin-top: 4.1875rem;
+    margin-left: 1.4rem;
+  }
+  .blog {
+    margin-top: 0px;
+    margin-bottom: 9.6rem;
+  }
+  .pagination-link {
+    padding: 12px 19px;
+    font-size: 14px;
+  }
 }
 @media (max-width: 576px) {
   .clients {
@@ -2344,6 +2402,12 @@ html {
     height: 36rem;
     margin-left: 0;
     margin-right: 0;
+  }
+  .blog-card {
+    max-width: 320px;
+  }
+  .blog-card-title {
+    max-width: 20rem;
   }
 }
 @media (max-height: 590px) {

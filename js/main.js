@@ -199,6 +199,7 @@ modalButtons.forEach((button) => {
     currentModal = document.querySelector(button.dataset.target);
     /* открываем текущее окно */
     currentModal.classList.toggle("is-open");
+    document.body.classList.add("locked");
     /* назнчаем новое белое диалоговое окно */
     modalDialog = currentModal.querySelector(".modal-dialog");
     /* отслеживаем клик по окно и пустым областям */
@@ -207,6 +208,7 @@ modalButtons.forEach((button) => {
       if (!event.composedPath().includes(modalDialog)) {
         /* закрываем окно */
         currentModal.classList.remove("is-open");
+        document.body.classList.remove("locked");
       }
     });
   });
@@ -216,7 +218,7 @@ document.addEventListener("keyup", (event) => {
   /* проверяем, что это Escape и текущее окно открыто */
   if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
     currentModal.classList.toggle("is-open");
-    body.classList.toggle("locked");
+    document.body.classList.remove("locked");
   }
 });
 

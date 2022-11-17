@@ -549,9 +549,6 @@ html {
   filter: grayscale(100%);
   transition: filter 0.2s;
 }
-.clients-logo:hover {
-  filter: grayscale(0%);
-}
 .title-blog {
   word-spacing: 2.7px;
   padding-bottom: 0.4375rem;
@@ -816,6 +813,7 @@ html {
   min-width: 45rem;
 }
 .footer-menu-link {
+  position: relative;
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -825,8 +823,10 @@ html {
   list-style-type: none;
   margin-bottom: 0.9375rem;
   display: block;
+  transition: color 0.2s;
 }
 .footer-menu-link-bold {
+  position: relative;
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
@@ -1401,6 +1401,12 @@ html {
   }
   .link-small-screens {
     display: none;
+  }
+  .clients-logo:hover {
+    filter: grayscale(0%);
+  }
+  .footer-menu-link:hover {
+    color: #5c8ee5;
   }
 }
 @media (max-width: 1700px) {

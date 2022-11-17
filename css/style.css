@@ -158,6 +158,7 @@ html {
   border: none; /* убрали обводку у кнопки */
   display: inline-block; /*Строчно-блочный*/
   cursor: pointer; /*Меняется крусор при наведении на кнопку*/
+  text-decoration: none;
 }
 .navbar-button {
   padding: 1.5625rem 3.125rem;
@@ -2067,7 +2068,7 @@ html {
 }
 @media (max-width: 576px) {
   .clients {
-    margin-bottom: 0;
+    margin-bottom: 101px;
   }
   .container {
     max-width: 92%;

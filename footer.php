@@ -253,9 +253,9 @@
         <p class="modal-text modal-text">
           Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
         </p>
-        <button  class="button modal-thx-button">
+         <a href="/index.php" class="button modal-thx-button">
               Вернуться на главную
-            </button>
+        </a>
       </div>
     </div>
     <!-- /.modal-thx -->

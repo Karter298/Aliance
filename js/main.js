@@ -189,8 +189,9 @@ const blogBlockSwiper = new Swiper(".blog-swiper-block", {
 let currentModal; //текущее модальное окно
 let modalDialog; //белое диалоговое окно
 let alertModal = document.querySelector("#alert-modal"); //окно с предупреждением
-
 const modalButtons = document.querySelectorAll("[data-toggle=modal]"); // переключатели модальных окон
+const mmClose = document.querySelector(".modal-close");
+const thxClose = document.querySelector(".modal-thx-close");
 modalButtons.forEach((button) => {
   /* клик по переключателю */
   button.addEventListener("click", (event) => {
@@ -210,6 +211,12 @@ modalButtons.forEach((button) => {
         currentModal.classList.remove("is-open");
         document.body.classList.remove("locked");
       }
+    });
+    mmClose.addEventListener("click", (event) => {
+      document.body.classList.remove("locked");
+    });
+    thxClose.addEventListener("click", (event) => {
+      document.body.classList.remove("locked");
     });
   });
 });
@@ -261,6 +268,7 @@ forms.forEach((form) => {
           if (response.ok) {
             thisForm.reset();
             alertModal.classList.add("is-open");
+            document.body.classList.add("locked");
             currentModal.classList.remove("is-open");
             alertModal.classList.add("is-open");
             currentModal = alertModal;
@@ -280,6 +288,7 @@ forms.forEach((form) => {
         });
       };
       ajaxSend(formData);
+      document.body.classList.remove("locked");
     });
 });
 

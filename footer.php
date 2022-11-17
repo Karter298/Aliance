@@ -238,7 +238,7 @@
       </div>
     </div>
     <div class="modal modal-thx" id="alert-modal">
-      <div class="modal-dialog modal-txh-dialog">
+      <div class="modal-txh-dialog">
         <a href="#" class="modal-close modal-thx-close" data-toggle="modal" data-target="#alert-modal">
           <svg class="modal-close-icon" width="24" height="24">
             <use href="img/sprite.svg#close"></use>

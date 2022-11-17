@@ -121,7 +121,7 @@
     <div class="modal" id="feedback-modal">
       <div class="modal-dialog">
         <h2 class="modal-title">Есть вопросы?</h2>
-        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
+        <a href="#" class="modal-close" data-toggle="modal" data-toggle="locked" data-target="#feedback-modal">
           <svg class="modal-close-icon" width="24" height="24">
             <use href="img/sprite.svg#close"></use>
           </svg>

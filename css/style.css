@@ -1408,6 +1408,10 @@ html {
   .footer-menu-link:hover {
     color: #5c8ee5;
   }
+  .blog-card:hover::before {
+    background: rgba(41, 45, 51, 0.4);
+    transition: all 0.2s;
+  }
 }
 @media (max-width: 1700px) {
   html {

@@ -260,6 +260,7 @@ forms.forEach((form) => {
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
+            alertModal.classList.add("is-open");
             currentModal.classList.remove("is-open");
             alertModal.classList.add("is-open");
             currentModal = alertModal;
@@ -270,6 +271,7 @@ forms.forEach((form) => {
               if (!event.composedPath().includes(modalDialog)) {
                 /* закрываем окно */
                 currentModal.classList.remove("is-open");
+                document.body.classList.remove("locked");
               }
             });
           } else {

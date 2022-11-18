@@ -159,6 +159,7 @@ html {
   display: inline-block; /*Строчно-блочный*/
   cursor: pointer; /*Меняется крусор при наведении на кнопку*/
   text-decoration: none;
+  transition: all 0.2s;
 }
 .navbar-button {
   padding: 1.5625rem 3.125rem;
@@ -770,6 +771,7 @@ html {
   font-style: inherit; /*как у родителя footer-info*/
   text-decoration: inherit;
   color: inherit;
+  transition: all 0.2s;
 }
 .footer-phone {
   font-style: normal;
@@ -779,9 +781,11 @@ html {
   text-decoration-line: underline;
   color: #292d33;
   margin-right: 1.3125rem;
+  transition: color 0.2s;
 }
 .footer-social-icon {
   margin-left: 0.75rem;
+  transition: all 0.2s;
 }
 .footer-seporetor {
   border: none;
@@ -1218,6 +1222,7 @@ html {
   font-size: 16px;
   line-height: 160%;
   color: #5c8ee6;
+  transition: color 0.2s;
 }
 .container-auto-chemistry {
   display: flex;
@@ -1408,9 +1413,24 @@ html {
   .footer-menu-link:hover {
     color: #5c8ee5;
   }
+  .footer-phone:hover {
+    color: #5c8ee5;
+  }
   .blog-card:hover::before {
     background: rgba(41, 45, 51, 0.4);
     transition: all 0.2s;
+  }
+  .button:hover {
+    background: #5c8ee5;
+  }
+  .footer-info-mail:hover {
+    color: #5c8ee5;
+  }
+  .footer-social-icon:hover {
+    transform: rotate(15deg);
+  }
+  .seo-readmore:hover {
+    color: #3a71d1;
   }
 }
 @media (max-width: 1700px) {
